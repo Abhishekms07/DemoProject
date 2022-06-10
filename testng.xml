@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+     
+        
+         <listener class-name="Uniform.listners"/>
+         <listener class-name="resources.ExtentReportNG"/>
+         
+         
+
+ </listeners>
+ 
+ <test name="Validating Register page">
+    <classes>
+      <class name="Uniform.Validateregisterpage"/>
+          </classes>
+      </test>
+ <test name="Validating login page">
+ <classes>
+ <class name="Uniform.Validateloginpage"/>
+ </classes>
+ </test>    
+ <test name="Validating Forgotpassword page">
+ <classes>
+ <class name="Uniform.ValidateForgotpassword"/>
+ </classes>
+ </test>  
+  <test name="Validating changepassword page">
+ <classes>
+ <class name="Uniform.validateChangepassword"/>
+ </classes>
+ </test> 
+ <test name="Validating Editinformation page">
+ <classes>
+ <class name="Uniform.Validateeditinformation"/>
+ </classes>
+ </test> 
+
+      </suite>
